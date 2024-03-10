@@ -1,2 +1,2 @@
 docker-compose down
-docker rmi big_data_hw3_image:1.0
+docker rmi gen_test_image:1.0

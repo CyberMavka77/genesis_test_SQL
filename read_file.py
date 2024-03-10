@@ -6,7 +6,7 @@ time.sleep(3)
 df = pd.read_csv("/opt/app/subscription1.csv")
 
 conn = psycopg2.connect(
-    database="homework3_db",
+    database="gen_test_db",
     user="docker",
     password="docker",
     host="database",

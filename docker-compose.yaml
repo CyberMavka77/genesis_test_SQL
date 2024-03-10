@@ -7,18 +7,18 @@ services:
     environment:
       POSTGRES_USER: docker
       POSTGRES_PASSWORD: docker
-      POSTGRES_DB: homework3_db
+      POSTGRES_DB: gen_test_db
     networks: 
-      - homework3-network
+      - gentest-network
   app:
-    image: big_data_hw3_image:1.0
+    image: gen_test_image:1.0
     depends_on:
       - database
     networks:
-      - homework3-network
+      - gentest-network
 
 networks:
-  homework3-network:
+  gentest-network:
     driver: bridge
 
 
